@@ -3,16 +3,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: blue;
     color: #333;
 }
 
 h1, h2, h3 {
-    color: #222;
+    color: pink;
 }
 
 a {
-    color: #007bff;
+    color: violet;
     text-decoration: none;
 }
 
