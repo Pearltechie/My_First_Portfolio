@@ -1,1 +1,48 @@
+/* Ensure the header, main, and footer take the entire width of the screen */
+header, main, footer {
+    width: 100%; /* Full width */
+    padding: 1em;
+    box-sizing: border-box; /* Ensure padding does not add extra width */
+}
 
+/* Header and footer styles for clarity */
+header {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+footer {
+    background-color: palevioletred;
+    text-align: center;
+}
+
+/* Flexbox for the body */
+body {
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+    margin: 0;
+    height: 100vh;
+}
+
+/* Flexbox for the main section */
+main {
+    display: flex; /* Create a row for article and aside */
+    flex-direction: row;
+    flex: auto; /* Adjust main height automatically */
+}
+
+/* Article styles (2/3 of the width) */
+article {
+    flex: 2; /* Takes 2 parts out of 3 */
+    background-color: palegreen;
+    padding: 1em;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Aside styles (1/3 of the width) */
+aside {
+    flex: 1; /* Takes 1 part out of 3 */
+    background-color: firebrick;
+    padding: 1em;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
